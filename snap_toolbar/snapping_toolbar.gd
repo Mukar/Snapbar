@@ -40,7 +40,6 @@ func load_toolbar_values():
 
 ## Updates toolbar values with changes made in popup, if changes are made there.
 func update_toolbar_from_popup():
-	print("Hello")
 	%input_translate.set_value_no_signal(float(line_edits[0].text))
 	%input_rotation.set_value_no_signal(float(line_edits[1].text))
 	%input_scale.set_value_no_signal(float(line_edits[2].text))
