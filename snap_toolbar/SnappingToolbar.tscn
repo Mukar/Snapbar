@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cebjsmuqhd7fo"]
+[gd_scene format=3 uid="uid://cebjsmuqhd7fo"]
 
 [ext_resource type="Script" uid="uid://d0ee5vodajnhe" path="res://addons/snap_toolbar/snapping_toolbar.gd" id="1_c6ynf"]
 
@@ -18,17 +18,17 @@
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#ff5d5d\" d=\"M2 1v8.586l1.293-1.293a1 1 0 0 1 1.414 0L7 10.587l2.293-2.293a1 1 0 0 1 1.414 0L13 10.586l1-1V6H9V1H2zm8 0v4h4zm-6 9.414-2 2V15h12v-2.586l-.293.293a1 1 0 0 1-1.414 0L10 10.414l-2.293 2.293a1 1 0 0 1-1.414 0L4 10.414z\"/></svg>
 "
 
-[node name="SnappingToolbar" type="Control"]
+[node name="SnappingToolbar" type="Control" unique_id=1059444361]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_c6ynf")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1337550277]
 layout_mode = 0
 offset_right = 278.0
 offset_bottom = 31.0
 
-[node name="icon_translate" type="Button" parent="HBoxContainer"]
+[node name="icon_translate" type="Button" parent="HBoxContainer" unique_id=538100122]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
@@ -50,14 +50,14 @@ shortcut_in_tooltip = false
 icon = SubResource("DPITexture_c6ynf")
 icon_alignment = 1
 
-[node name="input_translate" type="SpinBox" parent="HBoxContainer"]
+[node name="input_translate" type="SpinBox" parent="HBoxContainer" unique_id=1822613726]
 unique_name_in_owner = true
 layout_mode = 2
 step = 0.01
 value = 1.0
 suffix = "m"
 
-[node name="icon_rotation" type="Button" parent="HBoxContainer"]
+[node name="icon_rotation" type="Button" parent="HBoxContainer" unique_id=821614276]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
@@ -79,14 +79,14 @@ shortcut_in_tooltip = false
 icon = SubResource("DPITexture_c6ynf")
 icon_alignment = 1
 
-[node name="input_rotation" type="SpinBox" parent="HBoxContainer"]
+[node name="input_rotation" type="SpinBox" parent="HBoxContainer" unique_id=1746117960]
 unique_name_in_owner = true
 layout_mode = 2
 step = 0.01
 value = 15.0
 suffix = "°"
 
-[node name="icon_scale" type="Button" parent="HBoxContainer"]
+[node name="icon_scale" type="Button" parent="HBoxContainer" unique_id=992354452]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
@@ -108,7 +108,7 @@ shortcut_in_tooltip = false
 icon = SubResource("DPITexture_c6ynf")
 icon_alignment = 1
 
-[node name="input_scale" type="SpinBox" parent="HBoxContainer"]
+[node name="input_scale" type="SpinBox" parent="HBoxContainer" unique_id=441403614]
 unique_name_in_owner = true
 layout_mode = 2
 step = 0.01
